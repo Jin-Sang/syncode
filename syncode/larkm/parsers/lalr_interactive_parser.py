@@ -125,8 +125,10 @@ class InteractiveParser:
                     pass
                 else:
                     accepts.add(t)
+        print("-----turn start-----")            
         for acc in accepts:                    
             print(f"Accept sequence length: {acc}")
+        print("-----turn end-----")
         return accepts
 
     def resume_parse(self):
