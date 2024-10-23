@@ -16,6 +16,7 @@ class InteractiveParser:
     """
     def __init__(self, parser, parser_state, lexer_thread: LexerThread):
         self.parser = parser
+        print(parser)
         self.parser_state = parser_state
         self.lexer_thread = lexer_thread
         self.result = None
